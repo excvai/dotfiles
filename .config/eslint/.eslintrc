@@ -1,0 +1,6 @@
+// For next.js projects:
+
+{
+	"extends": ["next", "next/core-web-vitals"],
+	"rules": {}
+}
