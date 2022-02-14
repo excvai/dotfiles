@@ -1,0 +1,43 @@
+#!/bin/sh
+
+# Monitor config
+xrandr --output eDP-1-1 --auto --output HDMI-0 --auto --above eDP-1-1
+
+nvidia-settings --assign CurrentMetaMode="nvidia-auto-select +0+0 { ForceFullCompositionPipeline = On }"
+
+# Don't Randomly Turn off
+xset s off
+xset -dpms
+xset s noblank
+
+# Faster key repeat and delay
+xset r rate 210 40
+
+# Make capslock behave like ctrl:
+setxkbmap -option ctrl:nocaps
+# Make short-pressed Ctrl behave like Escape:
+xcape -e '#66=Escape'
+
+# Add multiple layouts, to switch press Alt+Shift
+setxkbmap us,ru -option grp:alt_shift_toggle
+
+# Default programs
+export EDITOR='nvim'
+export TERMINAL='alacritty'
+
+# XDG Paths
+export XDG_CONFIG_HOME=$HOME/.config
+export XDG_CACHE_HOME=$HOME/.cache
+export XDG_DATA_HOME=$HOME/.local/share
+
+# zsh config dir
+export ZDOTDIR=$HOME/.config/zsh
+
+# Compositor
+picom -b
+
+# Hide mouse when typing
+xbanish &
+
+# Run apps on startup
+firefox &
