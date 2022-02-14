@@ -1,0 +1,3 @@
+#!/bin/sh
+
+dmenu_path | dmenu "$@" | sed 's/^/sudo /' | ${SHELL:-"/bin/sh"} &

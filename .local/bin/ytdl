@@ -1,0 +1,4 @@
+#!/bin/sh
+
+yt-dlp -x -P $HOME/Music "$(xclip -selection c -o)"
+notify-send "Song downloaded successfully"
