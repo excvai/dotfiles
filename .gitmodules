@@ -1,0 +1,3 @@
+[submodule "/home/cvai/.config/nvim"]
+	path = /home/cvai/.config/nvim
+	url = https://github.com/excvai/neovim
