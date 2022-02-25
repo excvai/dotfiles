@@ -3,3 +3,5 @@
 	name = excvai
 [init]
 	defaultBranch = main
+[alias]
+	ac = commit -am
