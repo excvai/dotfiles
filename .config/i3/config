@@ -242,6 +242,16 @@ for_window [window_role="task_dialog"] floating enable
 # specify what apps should be floating window
 for_window [class="feh"] floating enable
 
+# Scratchpads
+# Make the currently focused window a scratchpad
+bindsym $mod+Shift+minus move scratchpad
+
+# Show the first scratchpad window
+bindsym $mod+minus scratchpad show
+
+# Show the telegram scratchpad window, if any.
+bindsym $mod+t [title="Telegram"] scratchpad show
+
 # Disable window titlebars & set border
 for_window [class=".*"] border pixel 2
 # Activate smart borders (always)
@@ -260,7 +270,7 @@ bindsym Print exec "flameshot gui"
 
 # Run apps on specific keybinding
 bindsym $mod+b exec "firefox"
-bindsym $mod+t exec "telegram-desktop"
+# bindsym $mod+t exec "telegram-desktop"
 
 # reload the configuration file
 bindsym $mod+Shift+c reload

@@ -4,4 +4,4 @@
 [init]
 	defaultBranch = main
 [alias]
-	ac = commit -am
+	am = commit -am
