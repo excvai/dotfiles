@@ -250,12 +250,12 @@ bindsym $mod+Shift+minus move scratchpad
 bindsym $mod+minus scratchpad show
 
 # Make the telegram window scratchpad
-for_window [title="Telegram"] floating enable
-for_window [title="Telegram"] move scratchpad
+for_window [class="TelegramDesktop"] floating enable
+for_window [class="TelegramDesktop"] move scratchpad
 # exec --no-startup-id "telegram-desktop"
 
 # Show the telegram scratchpad window, if any.
-bindsym $mod+t [title="Telegram"] scratchpad show
+bindsym $mod+t [class="TelegramDesktop"] scratchpad show
 
 # Disable window titlebars & set border
 for_window [class=".*"] border pixel 2
