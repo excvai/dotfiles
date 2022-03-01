@@ -42,3 +42,4 @@ xbanish &
 
 # Run apps on startup
 firefox &
+telegram-desktop &
