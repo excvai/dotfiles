@@ -4,4 +4,6 @@
 [init]
 	defaultBranch = main
 [alias]
-	am = commit -am
+  s = status
+  co = checkout
+  cob = checkout -b

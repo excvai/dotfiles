@@ -2,8 +2,6 @@
 
 alias j='z'
 alias f='zi'
-alias gl='lazygit'
-alias g='git'
 alias zsh-update-plugins="find "$ZDOTDIR/plugins" -type d -exec test -e '{}/.git' ';' -print0 | xargs -I {} -0 git -C {} pull -q"
 alias nvimrc='nvim ~/.config/nvim/'
 alias v='nvim'
@@ -14,9 +12,13 @@ alias open='xdg-open'
 # keep last opened dir after quit ranger
 # alias ranger='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
 
+# speed up git workflow
+alias g='git'
+alias gl='lazygit'
+
 # manage dotfiles with bare repo
 alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
-alias dotfiles-push="dotfiles commit -am 'Update files' && dotfiles push"
+alias dotfiles-push="dotfiles commit -am 'Update dotfiles' && dotfiles push"
 
 # get fastest mirrors
 alias mirror="sudo reflector -f 30 -l 30 --number 10 --verbose --save /etc/pacman.d/mirrorlist"
