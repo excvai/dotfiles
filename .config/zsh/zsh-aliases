@@ -8,6 +8,7 @@ alias zsh-update-plugins="find "$ZDOTDIR/plugins" -type d -exec test -e '{}/.git
 alias nvimrc='nvim ~/.config/nvim/'
 alias v='nvim'
 alias vim='nvim'
+alias code='codium'
 alias sxiv='sxiv -b'
 alias open='xdg-open'
 # keep last opened dir after quit ranger

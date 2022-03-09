@@ -34,6 +34,9 @@ export XDG_DATA_HOME=$HOME/.local/share
 # zsh config dir
 export ZDOTDIR=$HOME/.config/zsh
 
+# ssh-agent
+export SSH_AUTH_SOCK='$XDG_RUNTIME_DIR/ssh-agent.socket'
+
 # Compositor
 picom -b
 
