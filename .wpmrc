@@ -1,0 +1,10 @@
+[xtermcolors]
+author = (234, 234)
+background = 234
+quote = (240, 234)
+correct = (231, 234)
+incorrect = (1, 234)
+/* prompt = (238, 234) */
+prompt = (234, 234)
+score = (6, 234)
+top_bar = (238, 235)
