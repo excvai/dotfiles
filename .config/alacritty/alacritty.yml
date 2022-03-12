@@ -82,5 +82,6 @@ selection:
 
 key_bindings:
   - { key: Return, mods: Super|Shift, action: SpawnNewInstance }
+  - { key: Back, mods: Control, chars: "\x17" }
 
 live_config_reload: true
