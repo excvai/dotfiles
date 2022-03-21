@@ -43,6 +43,9 @@ picom -b
 # Hide mouse when typing
 xbanish &
 
+# Disable middle click paste
+xmousepasteblock &
+
 # Run apps on startup
 firefox &
 telegram-desktop &
