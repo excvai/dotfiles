@@ -138,6 +138,7 @@ set $ws20 "20"
 # Workspace assigns
 # assign [class="firefox" instance="Navigator"] → $ws1
 assign [class="osu!.exe"] → $ws4
+assign [class="Terraria.bin.x86_64"] → $ws4
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
