@@ -59,6 +59,9 @@ bindsym $mod+Shift+Ctrl+d exec --no-startup-id $HOME/.local/bin/dmenu_run_sudo -
 # .desktop file. It is a wrapper around dmenu, so you need that installed.
 bindcode $mod+40 exec --no-startup-id i3-dmenu-desktop --dmenu="dmenu -i -fn 'Hack Nerd Font'"
 
+# start dmenu emoji script
+bindsym $mod+Shift+e exec --no-startup-id $HOME/.local/bin/dmenuunicode
+
 # change focus
 bindsym $mod+h focus left
 bindsym $mod+j focus down
