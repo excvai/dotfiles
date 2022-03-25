@@ -1,0 +1,7 @@
+#!/bin/sh
+
+# Update list of explicitly installed packages
+pacman -Qqe > ~/.pacman.list
+
+# To install them later use this command:
+# pacman -S `cat ~/.pacman.list`
