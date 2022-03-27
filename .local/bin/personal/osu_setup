@@ -1,0 +1,14 @@
+#!/bin/sh
+
+opentabletdriver_status=$(systemctl --user status opentabletdriver.service | grep "Active" | awk '{print $2}')
+
+if [ "$opentabletdriver_status" = "active" ]
+then
+  systemctl --user stop opentabletdriver.service
+  picom -b
+  echo "Osu mode: false"
+else
+  systemctl --user start opentabletdriver.service
+  pkill picom
+  echo "Osu mode: true"
+fi
