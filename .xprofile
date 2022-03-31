@@ -23,20 +23,34 @@ xcape -e '#66=Escape'
 # setxkbmap us,ru -option grp:lalt_lshift_toggle
 setxkbmap us,ru -option grp:alt_space_toggle
 
-export PATH="$HOME/.local/bin":$PATH
-export PATH="$HOME/.local/bin/personal":$PATH
-
-# Default programs
-export EDITOR='nvim'
-export TERMINAL='alacritty'
-
 # XDG Paths
 export XDG_CONFIG_HOME=$HOME/.config
 export XDG_CACHE_HOME=$HOME/.cache
 export XDG_DATA_HOME=$HOME/.local/share
 
-# zsh config dir
-export ZDOTDIR=$HOME/.config/zsh
+# Default programs
+export EDITOR='nvim'
+export TERMINAL='alacritty'
+
+# Configure path
+export PATH="$HOME/.local/bin":$PATH
+export PATH="$HOME/.local/bin/personal":$PATH
+
+# Env variables
+export ZDOTDIR=$XDG_CONFIG_HOME/zsh
+export GNUPGHOME=$XDG_CONFIG_HOME/gnupg
+export GRIPHOME=$XDG_CONFIG_HOME/grip
+export _JAVA_OPTIONS=-Djava.util.prefs.userRoot=$XDG_CONFIG_HOME/java
+export JUPYTER_CONFIG_DIR=$XDG_CONFIG_HOME/jupyter 
+export NUGET_PACKAGES=$XDG_CACHE_HOME/NuGetPackages 
+export VSCODE_PORTABLE=$XDG_DATA_HOME/vscode
+export WINEPREFIX=$XDG_DATA_HOME/wineprefixes/default
+export NODE_REPL_HISTORY=$XDG_DATA_HOME/node_repl_history 
+# npm
+# see npm config ls -l | grep /
+export NPM_CONFIG_USERCONFIG=$XDG_CONFIG_HOME/npm/npmrc
+export NPM_CONFIG_CACHE=$XDG_CACHE_HOME/npm
+export NPM_CONFIG_TMP=$XDG_RUNTIME_DIR/npm
 
 # ssh-agent
 export SSH_AUTH_SOCK='$XDG_RUNTIME_DIR/ssh-agent.socket'
