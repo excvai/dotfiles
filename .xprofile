@@ -45,6 +45,7 @@ export JUPYTER_CONFIG_DIR=$XDG_CONFIG_HOME/jupyter
 export NUGET_PACKAGES=$XDG_CACHE_HOME/NuGetPackages 
 export VSCODE_PORTABLE=$XDG_DATA_HOME/vscode
 export WINEPREFIX=$XDG_DATA_HOME/wineprefixes/default
+export WGETRC=$XDG_CONFIG_HOME/wget/config
 export NODE_REPL_HISTORY=$XDG_DATA_HOME/node_repl_history 
 # npm
 # see npm config ls -l | grep /
