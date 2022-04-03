@@ -76,7 +76,7 @@ Darwin)
 	;;
 
 Linux)
-	alias ls='ls --color=auto'
+	alias ls="ls --group-directories-first --color=auto"
 	;;
 
 CYGWIN* | MINGW32* | MSYS* | MINGW*)
