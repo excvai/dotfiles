@@ -9,6 +9,7 @@ alias vim='nvim'
 alias code='codium'
 alias sxiv='sxiv -b'
 alias open='xdg-open'
+alias ncmp="ncmpcpp"
 
 # keep last opened dir after quit ranger
 # alias ranger='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
