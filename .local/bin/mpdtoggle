@@ -1,0 +1,15 @@
+#!/bin/sh
+
+is_stopped=$(mpc current)
+
+if [ -z "$is_stopped" ]
+then
+  mpc clear
+  mpc random on
+  mpc add /
+  mpc play
+else
+  mpc clear
+  mpc random off
+  mpc stop
+fi
