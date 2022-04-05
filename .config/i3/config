@@ -300,6 +300,7 @@ bindsym $mod+b exec "firefox"
 
 # Mpc keybindings
 bindsym $mod+Shift+t exec --no-startup-id "mpc toggle"
+bindsym $mod+Shift+Ctrl+t exec --no-startup-id "mpdtoggle"
 bindsym $mod+Shift+p exec --no-startup-id "mpc prev"
 bindsym $mod+Shift+n exec --no-startup-id "mpc next"
 
