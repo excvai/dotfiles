@@ -62,8 +62,8 @@ highlight = "#e78a4e"
 [urgency_normal]
 timeout = 5
 background = "#323232"
-foreground = "#dfbf8e"
-frame_color = "#e78a4e"
+foreground = "#EAEAEA"
+frame_color = "#4c7899"
 highlight = "#e78a4e"
 
 [urgency_critical]
