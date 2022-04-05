@@ -39,6 +39,9 @@ bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
+# Use custom script to toggle touchpad
+bindsym XF86TouchpadOff exec --no-startup-id toggle-touchpad
+
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
@@ -299,10 +302,10 @@ bindsym $mod+b exec "firefox"
 # bindsym $mod+t exec "telegram-desktop"
 
 # Mpc keybindings
-bindsym $mod+Shift+t exec --no-startup-id "mpc toggle"
+bindsym XF86AudioPlay exec --no-startup-id "mpc toggle"
 bindsym $mod+Shift+Ctrl+t exec --no-startup-id "mpdtoggle"
-bindsym $mod+Shift+p exec --no-startup-id "mpc prev"
-bindsym $mod+Shift+n exec --no-startup-id "mpc next"
+bindsym XF86AudioPrev exec --no-startup-id "mpc prev"
+bindsym XF86AudioNext exec --no-startup-id "mpc next"
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
