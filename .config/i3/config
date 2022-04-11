@@ -272,7 +272,7 @@ for_window [class="TopTracker" title="TopTracker"] move scratchpad
 for_window [class="TopTracker" title="TopTracker"] floating enable
 
 # Show the TopTracker scratchpad window, if any.
-bindsym $mod+Ctrl+t [class="TopTracker" title="TopTracker"] scratchpad show
+bindsym $mod+Shift+t [class="TopTracker" title="TopTracker"] scratchpad show
 
 # Disable window titlebars & set border
 for_window [class=".*"] border pixel 2
