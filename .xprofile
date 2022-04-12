@@ -71,4 +71,4 @@ xmousepasteblock &
 
 # Run apps on startup
 firefox &
-# telegram-desktop &
+telegram-desktop &
