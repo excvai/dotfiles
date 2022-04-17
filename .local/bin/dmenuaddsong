@@ -1,0 +1,3 @@
+#!/bin/sh
+
+mpc listall | dmenu -i -l 30 | mpc add
