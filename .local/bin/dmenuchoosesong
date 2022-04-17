@@ -1,0 +1,8 @@
+#!/bin/sh
+
+chosensong=$(mpc playlist | dmenu -i -l 30)
+
+if [ "$chosensong" != "" ]
+then
+  mpc searchplay filename "$chosensong"
+fi
