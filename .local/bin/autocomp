@@ -1,0 +1,7 @@
+#!/bin/sh
+
+# If already running, end this and running instance
+# where $1 - is a file that is currently being edited
+
+pkill -f "entr compiler" && exit
+echo "$1" | entr compiler "$1"
