@@ -1,0 +1,7 @@
+#!/bin/sh
+
+# Mini script for converting webm to gif (use gifski for better results)
+
+ffmpeg -y -i $1 -vf palettegen _tmp_palette.png
+ffmpeg -y -i $1 -i _tmp_palette.png -filter_complex paletteuse -r 10  ${1%.webm}.gif
+rm _tmp_palette.png
