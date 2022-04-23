@@ -1,9 +1,9 @@
-# [@cvai](https://github.com/excvai)'s dotfiles
+## My dotfiles
 
-![machfiles image](./assets/1.png)
+![dotfiles image](./assets/1.png)
 
-![machfiles image](./assets/2.png)
+![dotfiles image](./assets/2.png)
 
-![machfiles image](./assets/3.png)
+![dotfiles image](./assets/3.png)
 
-![machfiles image](./assets/4.png)
+![dotfiles image](./assets/4.png)
