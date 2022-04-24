@@ -1,0 +1,53 @@
+#!/bin/sh
+
+# Convert one filetype into another
+
+inputFile=$1
+inputExt="${inputFile##*.}"
+outputFile=$2
+outputExt="${outputFile##*.}"
+
+checkInputExtension() {
+  case "$inputExt" in
+    mp4)
+      convertMp4
+      ;;
+
+    *)
+      notFoundExtHandler "input"
+      ;;
+  esac
+}
+
+convertMp4() {
+  case "$outputExt" in
+    gif)
+      gifski -o "$outputFile" "$inputFile"
+      successHandler
+      ;;
+
+    *)
+      notFoundExtHandler "output"
+      ;;
+  esac
+}
+
+successHandler() {
+  echo "File was successfully converted"
+}
+
+notFoundExtHandler() {
+  type=$1
+
+  if [ "$type" = "input" ]
+  then
+    echo "Input extension '$inputExt' is not supported"
+  elif [ "$type" = "output" ]
+  then
+    echo "Output extension '$outputExt' is not supported"
+  else
+    echo "notFoundExtHandler type is not provided"
+  fi
+}
+
+checkInputExtension

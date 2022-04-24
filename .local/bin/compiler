@@ -31,13 +31,7 @@ case "$ext" in
 	# h) sudo make install ;;
 	java) ./run.sh ;;
 	# m) octave "$file" ;;
-	# md)	if  [ -x "$(command -v lowdown)" ]; then
-	# 		lowdown --parse-no-intraemph "$file" -Tms | groff -mpdfmark -ms -kept > "$base".pdf
-	# 	elif [ -x "$(command -v groffdown)" ]; then
-	# 		groffdown -i "$file" | groff > "$base.pdf"
-	# 	else
-	# 		pandoc -t ms --highlight-style=kate -s -o "$base".pdf "$file"
-	# 	fi ; ;;
+	md)	pandoc -t ms --highlight-style=kate -s -o "$base".pdf "$file" ;;
 	# mom) preconv "$file" | refer -PS -e | groff -mom -kept -T pdf > "$base".pdf ;;
 	# ms) preconv "$file" | refer -PS -e | groff -me -ms -kept -T pdf > "$base".pdf ;;
 	# org) emacs "$file" --batch -u "$USER" -f org-latex-export-to-pdf ;;
