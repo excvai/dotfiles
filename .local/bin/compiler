@@ -31,7 +31,7 @@ case "$ext" in
 	# h) sudo make install ;;
 	java) ./run.sh ;;
 	# m) octave "$file" ;;
-	md)	pandoc -t ms --highlight-style=kate -s -o "$base".pdf "$file" ;;
+	md)	convertfiletype "$file" "$base".pdf ;;
 	# mom) preconv "$file" | refer -PS -e | groff -mom -kept -T pdf > "$base".pdf ;;
 	# ms) preconv "$file" | refer -PS -e | groff -me -ms -kept -T pdf > "$base".pdf ;;
 	# org) emacs "$file" --batch -u "$USER" -f org-latex-export-to-pdf ;;

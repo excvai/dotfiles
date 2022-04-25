@@ -21,6 +21,7 @@ dosbox
 downgrade
 dunst
 efibootmgr
+entr
 fakeroot
 fd
 ffmpegthumbnailer
@@ -30,6 +31,7 @@ flex
 fzf
 gamemode
 gcc
+gifski
 gimp
 git
 groff
@@ -68,6 +70,7 @@ lightdm-gtk-greeter-settings
 linux
 linux-firmware
 linux-headers
+lxappearance
 m4
 make
 man-db
@@ -84,6 +87,7 @@ neofetch
 neovim
 networkmanager
 nodejs-lts-gallium
+nordic-polar-theme
 noto-fonts
 noto-fonts-cjk
 noto-fonts-emoji
@@ -95,8 +99,10 @@ ocl-icd
 opentabletdriver
 optimus-manager
 p7zip
+pandoc
 patch
 pavucontrol
+peek
 picom
 pipewire-alsa
 pipewire-jack
@@ -115,6 +121,7 @@ sudo
 sxiv
 telegram-desktop
 texinfo
+texlive-core
 timeshift
 tldr
 toptracker
@@ -125,6 +132,7 @@ unzip
 update-grub
 vscodium-bin
 wget
+whitesur-gtk-theme
 wine
 wine-mono
 winetricks
