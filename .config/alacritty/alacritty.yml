@@ -84,4 +84,7 @@ key_bindings:
   - { key: Return, mods: Super|Shift, action: SpawnNewInstance }
   - { key: Back, mods: Control, chars: "\x17" }
 
+mouse_bindings:
+  - { mouse: 9,  action: Paste }
+
 live_config_reload: true
