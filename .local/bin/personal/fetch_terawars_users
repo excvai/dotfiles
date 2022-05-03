@@ -1,9 +1,0 @@
-#!/bin/sh
-
-usersAmount=$(curl -s https://minecraftonly.ru/ | grep --after-context=1 "<span>TechnoMagic</span>" | grep -o -P "(?<=<label><b><font color='#FD8D20'>).*(?=</font></b> в игре</label>)")
-echo "Number of users: $usersAmount"
-
-if [ $usersAmount -gt 5 ]
-then
-  tg-notify-send "Server is active!"
-fi

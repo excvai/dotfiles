@@ -1,0 +1,5 @@
+#!/bin/sh
+
+file_path="$HOME/Tmp/"
+flameshot screen --number 0 --delay 500 --path $file_path &&
+notify-send "Screenshot saved"
