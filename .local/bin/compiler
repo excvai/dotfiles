@@ -32,6 +32,7 @@ case "$ext" in
 	java) ./run.sh ;;
 	# m) octave "$file" ;;
 	md)	convertfiletype "$file" "$base".pdf ;;
+	js) node "$file" ;;
 	# mom) preconv "$file" | refer -PS -e | groff -mom -kept -T pdf > "$base".pdf ;;
 	# ms) preconv "$file" | refer -PS -e | groff -me -ms -kept -T pdf > "$base".pdf ;;
 	# org) emacs "$file" --batch -u "$USER" -f org-latex-export-to-pdf ;;
