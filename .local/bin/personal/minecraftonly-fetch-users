@@ -1,11 +1,20 @@
 #!/bin/sh
 
-httpUrl="https://minecraftonly.ru/"
 serverName="$1"
-usersAmount=$(curl -s "$httpUrl" | grep --after-context=1 "<span>$serverName</span>" | grep -o -P "(?<=<label><b><font color='#FD8D20'>).*(?=</font></b> в игре</label>)")
+if [ -z $serverName ]
+then
+  echo "Server name is not provided"
+  exit 1
+fi
+
+httpUrl="https://minecraftonly.ru/"
+usersAmount=$(curl -s "$httpUrl" \
+  | grep --after-context=1 "<span>$serverName</span>" \
+  | grep -o -P "(?<=<label><b><font color='#FD8D20'>).*(?=</font></b> в игре</label>)")
+
 echo "Number of users: $usersAmount"
 
 if [ $usersAmount -gt 5 ]
 then
-  tg-notify-send "Server is active!"
+  tg-notify-send "Server *$serverName* is active!\nNumber of users: *$usersAmount*"
 fi
