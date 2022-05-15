@@ -41,7 +41,7 @@ i3-gaps
 i3-swallow-git
 i3lock
 imagemagick
-jdk-openjdk
+jdk8-openjdk
 jq
 jupyter-notebook
 keepassxc
@@ -93,7 +93,6 @@ noto-fonts-cjk
 noto-fonts-emoji
 npm
 nvidia
-nvidia-dkms
 nvidia-settings
 ocl-icd
 opentabletdriver
@@ -118,6 +117,7 @@ samba
 speedtest-cli
 sudo
 sxiv
+syncthing
 telegram-desktop
 texinfo
 timeshift
@@ -152,5 +152,6 @@ yay
 yt-dlp
 zathura
 zathura-pdf-mupdf
+zoom
 zoxide
 zsh
