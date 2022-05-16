@@ -3,13 +3,15 @@
 alias j='z'
 alias f='zi'
 alias zsh-update-plugins="find "$ZDOTDIR/plugins" -type d -exec test -e '{}/.git' ';' -print0 | xargs -I {} -0 git -C {} pull -q"
-alias nvimrc='nvim ~/.config/nvim/'
+alias nvimrc='nvim ~/.config/nvim/init.lua'
 alias v='nvim'
 alias vim='nvim'
 alias code='codium'
 alias sxiv='sxiv -b'
 alias open='xdg-open'
 alias ncmp="ncmpcpp"
+alias wine32="WINEPREFIX=~/.local/share/wineprefixes/bottle32 wine"
+alias wine64="WINEPREFIX=~/.local/share/wineprefixes/bottle64 wine"
 
 # keep last opened dir after quit ranger
 # alias ranger='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'

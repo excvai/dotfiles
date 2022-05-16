@@ -17,7 +17,7 @@ xset r rate 210 40
 
 # Make capslock behave like ctrl:
 setxkbmap -option ctrl:nocaps
-# Make short-pressed Ctrl behave like Escape:
+# Make short-pressed Ctrl(capslock) behave like Escape:
 xcape -e '#66=Escape'
 
 # Add multiple layouts, to switch press Alt+Shift
