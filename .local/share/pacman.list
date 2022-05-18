@@ -127,6 +127,7 @@ toptracker
 tree
 ttf-times-new-roman
 ueberzug
+unrar
 unzip
 update-grub
 vscodium-bin
@@ -141,7 +142,6 @@ xbanish
 xcape
 xclip
 xdg-user-dirs
-xdotool
 xf86-video-intel
 xmousepasteblock-git
 xorg-server

@@ -18,16 +18,11 @@ xset r rate 210 40
 # Make capslock behave like ctrl:
 setxkbmap -option ctrl:nocaps
 # Make short-pressed Ctrl(capslock) behave like Escape:
-xcape -e '#66=Escape'
+xcape -e "#66=Escape"
 
 # Add multiple layouts, to switch press Alt+Shift
 # setxkbmap us,ru -option grp:lalt_lshift_toggle
 setxkbmap us,ru -option grp:alt_space_toggle
-
-# XDG Paths
-export XDG_CONFIG_HOME=$HOME/.config
-export XDG_CACHE_HOME=$HOME/.cache
-export XDG_DATA_HOME=$HOME/.local/share
 
 # Default programs
 export EDITOR="nvim"
@@ -41,6 +36,11 @@ export WM="i3"
 export PATH="$HOME/.local/bin":$PATH
 export PATH="$HOME/.local/bin/personal":$PATH
 
+# XDG Paths
+export XDG_CONFIG_HOME=$HOME/.config
+export XDG_CACHE_HOME=$HOME/.cache
+export XDG_DATA_HOME=$HOME/.local/share
+
 # Env variables
 export ZDOTDIR=$XDG_CONFIG_HOME/zsh
 export GNUPGHOME=$XDG_CONFIG_HOME/gnupg
@@ -52,24 +52,22 @@ export VSCODE_PORTABLE=$XDG_DATA_HOME/vscode
 export WINEPREFIX=$XDG_DATA_HOME/wineprefixes/default
 export WGETRC=$XDG_CONFIG_HOME/wget/config
 export NODE_REPL_HISTORY=$XDG_DATA_HOME/node_repl_history 
+# ssh-agent
+export SSH_AUTH_SOCK=$XDG_RUNTIME_DIR/ssh-agent.socket
 # npm
 # see npm config ls -l | grep /
 export NPM_CONFIG_USERCONFIG=$XDG_CONFIG_HOME/npm/npmrc
 export NPM_CONFIG_CACHE=$XDG_CACHE_HOME/npm
 export NPM_CONFIG_TMP=$XDG_RUNTIME_DIR/npm
 
-# ssh-agent
-export SSH_AUTH_SOCK='$XDG_RUNTIME_DIR/ssh-agent.socket'
+# Run apps on startup
 
 # Compositor
 picom -b
-
 # Hide mouse when typing
 xbanish &
-
 # Disable middle click paste
 xmousepasteblock &
 
-# Run apps on startup
 firefox &
 telegram-desktop &
