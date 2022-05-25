@@ -1,6 +1,6 @@
 #!/bin/sh
 
-keyPath="$HOME/Documents/personal/keys"
+keyPath="$HOME/Documents/personal/keys.ini"
 token=$(cat $keyPath | awk -F '=' '/tg/ {print $2}')
 chatId="792380932"
 textMessage="\"$1\""
