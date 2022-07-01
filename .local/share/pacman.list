@@ -11,6 +11,7 @@ autorandr
 autotiling
 backintime
 base
+bat
 bison
 brave-bin
 cmake
@@ -22,6 +23,7 @@ downgrade
 dunst
 efibootmgr
 entr
+eva
 fakeroot
 fd
 ffmpegthumbnailer

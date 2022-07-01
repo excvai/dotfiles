@@ -83,6 +83,8 @@ selection:
 key_bindings:
   - { key: Return, mods: Super|Shift, action: SpawnNewInstance }
   - { key: Back, mods: Control, chars: "\x17" }
+  - { key: Return,   mods: Shift,   chars: "\x1b[13;2u" }
+  # - { key: Return,   mods: Control, chars: "\x1b[13;5u" }
 
 mouse_bindings:
   - { mouse: 9,  action: Paste }
